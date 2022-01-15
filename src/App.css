@@ -1,38 +1,119 @@
-.App {
-  text-align: center;
+* {
+  box-sizing: border-box;
+  margin: 0;
+  padding: 0;
+  font-family: 'Trebuchet MS', 'Lucida Sans Unicode', 'Lucida Grande',
+    'Lucida Sans', Arial, sans-serif;
 }
 
-.App-logo {
-  height: 40vmin;
-  pointer-events: none;
+body {
+  background-color:#1A374D
+  
 }
-
-@media (prefers-reduced-motion: no-preference) {
-  .App-logo {
-    animation: App-logo-spin infinite 20s linear;
-  }
-}
-
-.App-header {
-  background-color: #282c34;
-  min-height: 100vh;
+.App-todo-app {
   display: flex;
   flex-direction: column;
+  justify-content: start;
+  width: 520px;
+  min-height: 600px;
+  background: #f0f3f5;
+  text-align: center;
+  margin: 128px auto;
+  border-radius: 10px;
+  padding-bottom: 32px;
+}
+
+.App-h1 {
+  margin: 32px 0;
+  color: #1A374D;
+  font-size: 24px;
+}
+
+.Todo-complete {
+  text-decoration: line-through;
+  opacity: 0.4;
+}
+
+.Todo-form {
+  margin-bottom: 32px;
+}
+
+.Todo-input {
+  padding: 14px 32px 14px 16px;
+  border-radius: 4px 0 0 4px;
+  border: 2px solid #1A374D;
+  outline: none;
+  width: 320px;
+  background: transparent;
+  color: #1A374D;
+}
+
+.Todo-input::placeholder {
+  color: #1A374D;
+}
+
+.Todo-button {
+  padding: 16px;
+  border: none;
+  border-radius: 0 4px 4px 0;
+  cursor: pointer;
+  outline: none;
+  background-color:#1A374D;
+  color: #fff;
+  text-transform: capitalize;
+}
+
+.Todo-input.edit {
+  border: 2px solid #149fff;
+}
+
+.Todo-button.edit {
+  background-color:#406882;
+  padding: 16px 22px;
+}
+
+/* .todo-container {
+  display: flex;
+  flex-direction: row;
+  position: relative;
+} */
+
+.Todo-row {
+  display: flex;
+  justify-content: space-between;
   align-items: center;
-  justify-content: center;
-  font-size: calc(10px + 2vmin);
-  color: white;
+  margin: 4px auto;
+  color: #fff;
+  background-color:#406882;
+  padding: 16px;
+  border-radius: 5px;
+  width: 90%;
 }
 
-.App-link {
-  color: #61dafb;
+.Todo-row:nth-child(4n + 1) {
+  background-color:#6998AB;
 }
 
-@keyframes App-logo-spin {
-  from {
-    transform: rotate(0deg);
-  }
-  to {
-    transform: rotate(360deg);
-  }
+.Todo-row:nth-child(4n + 2) {
+  background-color: #B1D0E0;
+}
+
+.Todo-row:nth-child(4n + 3) {
+  background-color:#1A374D;
+}
+
+.Icons {
+  display: flex;
+  align-items: center;
+  font-size: 24px;
+  cursor: pointer;
+}
+
+.Delete-icon {
+  margin-right: 5px;
+  color: #fff;
+}
+
+.Edit-icon {
+  color: #fff;
 }
