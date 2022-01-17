@@ -6,10 +6,6 @@
     'Lucida Sans', Arial, sans-serif;
 }
 
-body {
-  background-color:#1A374D
-  
-}
 .App-todo-app {
   display: flex;
   flex-direction: column;
@@ -20,7 +16,9 @@ body {
   text-align: center;
   margin: 128px auto;
   border-radius: 10px;
+  border: none;
   padding-bottom: 32px;
+  box-shadow: 1px 1px 10px 10px #1A374D;
 }
 
 .App-h1 {
@@ -72,11 +70,6 @@ body {
   padding: 16px 22px;
 }
 
-/* .todo-container {
-  display: flex;
-  flex-direction: row;
-  position: relative;
-} */
 
 .Todo-row {
   display: flex;
@@ -88,18 +81,6 @@ body {
   padding: 16px;
   border-radius: 5px;
   width: 90%;
-}
-
-.Todo-row:nth-child(4n + 1) {
-  background-color:#6998AB;
-}
-
-.Todo-row:nth-child(4n + 2) {
-  background-color: #B1D0E0;
-}
-
-.Todo-row:nth-child(4n + 3) {
-  background-color:#1A374D;
 }
 
 .Icons {
